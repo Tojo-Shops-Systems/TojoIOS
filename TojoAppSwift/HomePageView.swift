@@ -17,7 +17,8 @@ struct HomePageView: View {
         SensorItem(name: "Temperatura", icon: "thermometer.medium", color: Color.red),
         SensorItem(name: "Servomotor", icon: "gearshape.fill", color: Color.green),
         SensorItem(name: "Sensor de Gas", icon: "smoke.fill", color: Color.purple),
-        SensorItem(name: "Matriz 4x4", icon: "grid.circle.fill", color: Color.cyan)
+        SensorItem(name: "Matriz 4x4", icon: "grid.circle.fill", color: Color.cyan),
+        SensorItem(name: "NFC", icon: "dot.radiowaves.right", color: .black)
     ]
     
     let columns = [
