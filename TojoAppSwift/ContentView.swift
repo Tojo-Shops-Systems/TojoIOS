@@ -86,12 +86,12 @@ struct ContentView: View {
 }
 */
 
-// ...existing code...
+//
 import SwiftUI
 
 struct ContentView: View {
     
-    // Cambiado a email para que coincida con el backend (login usa email)
+    //
     @State private var email = ""
     @State private var password = ""
     @State private var wrongUsername = 0
@@ -210,7 +210,7 @@ struct ContentView: View {
         }
     }
 }
-// ...existing code...
+
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
