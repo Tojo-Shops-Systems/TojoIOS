@@ -91,7 +91,7 @@ import SwiftUI
 
 struct ContentView: View {
     
-    //
+    
     @State private var email = ""
     @State private var password = ""
     @State private var wrongUsername = 0
@@ -104,7 +104,7 @@ struct ContentView: View {
     private let baseURL = URL(string: "http://127.0.0.1:8000/api/auth")!
     
     var body: some View {
-        NavigationView{
+        NavigationStack{
             ZStack{
                 Color.red
                     .ignoresSafeArea()

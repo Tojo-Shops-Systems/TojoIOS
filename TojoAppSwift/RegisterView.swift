@@ -77,7 +77,7 @@ struct RegisterView: View {
 }
 */
 
-// ...existing code...
+
 import SwiftUI
 
 struct RegisterView: View {
@@ -178,7 +178,9 @@ struct RegisterView: View {
                 .padding(.bottom, 40)
             }
         }
-        .navigationBarHidden(true)
+        .navigationBarTitleDisplayMode(.inline)
+        .toolbarBackground(. hidden, for: .navigationBar) // Hace la barra transparente
+        .toolbarColorScheme(.dark, for: .navigationBar)
         .alert(isPresented: $showAlert) {
             Alert(title: Text("Registro"), message: Text(alertMessage), dismissButton: .default(Text("OK")))
         }
@@ -289,7 +291,7 @@ struct RegisterView: View {
         showAlert = true
     }
 }
-//
+
 struct RegisterView_Previews: PreviewProvider {
     static var previews: some View {
         RegisterView()
