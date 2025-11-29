@@ -87,6 +87,8 @@ struct ContentView: View {
 */
 
 //
+// MARK: - BODY
+
 import SwiftUI
 
 struct ContentView: View {
